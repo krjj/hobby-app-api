@@ -9,6 +9,8 @@ import { MONGODB_URI } from "./util/secrets";
 import * as swaggerUi from "swagger-ui-express";
 import * as swaggerDocument from "./swagger/swagger.json";
 
+import * as cors from "cors";
+
 // Controllers (route handlers)
 import * as userController from "./controllers/user";
 import * as hobbyController from "./controllers/hobby";
@@ -36,6 +38,10 @@ app.use(lusca.xframe("SAMEORIGIN"));
 app.use(lusca.xssProtection(true));
 
 
+//use cors middleware
+app.use(cors.default());
+
+
 /**
  * User routes.
  */
@@ -51,7 +57,11 @@ app.delete("/hobby/:id", hobbyController.deleteHobby);
 
 
 
+
+
+
 app.use("/swagger", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+
 
 
 export default app;
