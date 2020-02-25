@@ -1,6 +1,6 @@
 # Hobby API
 
-API built using typsescript, express
+API built using typsescript, express. Swagger documentation available at `/swagger`.
 
 
 ## Run in debug mode 
