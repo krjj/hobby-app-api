@@ -1,78 +1,59 @@
 {
-    "get": {
-        "users": {
-            "status": 200,
-            "data": {
-                "users": [
-                    {
-                        "_id": "5e55110373432e3ed8e6c6db",
-                        "name": "User 1"
-                    },
-                    {
-                        "_id": "5e55113873432e3ed8e6c6dc",
-                        "name": "User 2"
-                    }
-                ]
-            }
-        },
-        "hobbies": {
-            "5e55110373432e3ed8e6c6db": {
-                "status": 200,
-                "data": [
-                    {
-                        "_id": "5e55118a73432e3ed8e6c6dd",
-                        "name": "Random",
-                        "passion": "medium",
-                        "year": 1902
-                    },
-                    {
-                        "_id": "5e55119273432e3ed8e6c6de",
-                        "name": "Random2",
-                        "passion": "medium",
-                        "year": 2002
-                    }
-                ]
-            },
-            "5e55113873432e3ed8e6c6dc": {
-                "status": 200,
-                "data": [
-                    {
-                        "_id": "5e55119b73432e3ed8e6c6df",
-                        "name": "Random2",
-                        "passion": "medium",
-                        "year": 2002
-                    },
-                    {
-                        "_id": "5e55119e73432e3ed8e6c6e0",
-                        "name": "Random2",
-                        "passion": "high",
-                        "year": 2002
-                    },
-                    {
-                        "_id": "5e5511a073432e3ed8e6c6e1",
-                        "name": "Random2",
-                        "passion": "very high",
-                        "year": 2002
-                    }
-                ]
-            }
+    "users": {
+        "status": 200,
+        "data": {
+            "users": [
+                {
+                    "_id": "5e55110373432e3ed8e6c6db",
+                    "name": "User 1"
+                },
+                {
+                    "_id": "5e55113873432e3ed8e6c6dc",
+                    "name": "User 2"
+                }
+            ]
         }
     },
-    "post": {
-        "user": {
+    "hobbies": {
+        "5e55110373432e3ed8e6c6db": {
             "status": 200,
-            "data": {
-                "name": "mock_name",
-                "id": "5e54072ac4eeca0ba1d16b11"
-            }
+            "data": [
+                {
+                    "_id": "5e55118a73432e3ed8e6c6dd",
+                    "name": "Random",
+                    "passion": "medium",
+                    "year": 1902
+                },
+                {
+                    "_id": "5e55119273432e3ed8e6c6de",
+                    "name": "Random2",
+                    "passion": "medium",
+                    "year": 2002
+                }
+            ]
         },
-        "hobby": {
-            "status": 200
-        }
-    },
-    "delete": {
-        "hobby": {
-            "status": 200
+        "5e55113873432e3ed8e6c6dc": {
+            "status": 200,
+            "data": [
+                {
+                    "_id": "5e55119b73432e3ed8e6c6df",
+                    "name": "Random2",
+                    "passion": "medium",
+                    "year": 2002
+                },
+                {
+                    "_id": "5e55119e73432e3ed8e6c6e0",
+                    "name": "Random2",
+                    "passion": "high",
+                    "year": 2002
+                },
+                {
+                    "_id": "5e5511a073432e3ed8e6c6e1",
+                    "name": "Random2",
+                    "passion": "very high",
+                    "year": 2002
+                }
+            ]
         }
     }
 }
